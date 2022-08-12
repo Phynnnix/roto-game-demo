@@ -1,0 +1,48 @@
+.tile-base{
+    position: absolute;
+    width: 84%;
+    height: 84%;
+    margin-left: 8%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-right: 8%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tile-empty{
+    background-image: url("../assets/tiles/Tile_0_Empty.png");
+}
+
+.tile-dorm{
+    background-image: url("../assets/tiles/Tile_1_Dorm.png");
+}
+
+.tile-farm{
+    background-image: url("../assets/tiles/Tile_2_Farm.png");
+}
+
+.tile-forge{
+    background-image: url("../assets/tiles/Tile_3_Forge.png");
+}
+
+.tile-library{
+    background-image: url("../assets/tiles/Tile_4_Library.png");
+}
+
+.tile-arcanum{
+    background-image: url("../assets/tiles/Tile_5_Arcanum.png");
+}
+
+.tile-vault{
+    background-image: url("../assets/tiles/Tile_6_Vault.png");
+}
+
+.tile-rock.tile-gold-rock{
+    background-image: url("../assets/tiles/Tile_9_Rock.png");
+}
+
+.tile-rock{
+    background-image: url("../assets/tiles/Tile_9_Rock.png");
+}

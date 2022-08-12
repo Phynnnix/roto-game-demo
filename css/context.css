@@ -1,0 +1,172 @@
+.context-flex-container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.context-flex-mediator{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0;
+    padding: 4px;
+    border: 0;
+    border-left: 3px double black;
+    border-right: 3px double black;
+    min-width: 10px;
+    height: calc(100% - 8px);
+}
+
+.context-flex-element{
+    position:relative;
+    display:none;
+    flex-grow: 1;
+    margin: 0;
+    padding: 4px;
+    border: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 15px;
+    min-width: 10px;
+    height: calc(100% - 8px);
+}
+
+.context-flex-element.context-active{
+    display: block;
+}
+
+.context-buildroom-area{
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 100%;
+}
+
+.context-buildroom-area>.context-buildroom-button{
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: azure;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.context-buildroom-area>.context-buildroom-price{
+    position: relative;
+    display: block;
+    width: 64px;
+    height: calc(100% - 64px);
+    padding: 4px;
+    color: red;
+}
+.context-buildroom-area>.context-buildroom-price.context-buildroom-allowed{
+    color: black;
+}
+
+.context-buildroom-area>.context-buildroom-button::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.6);
+    cursor: not-allowed;
+}
+
+.context-buildroom-area>.context-buildroom-button.context-buildroom-allowed::after{
+    display: none;
+}
+
+.context-buildroom-area-1>.context-buildroom-button{
+    background-image: url("../assets/tiles/Tile_1_Dorm.png");
+}
+
+.context-buildroom-area-2>.context-buildroom-button{
+    background-image: url("../assets/tiles/Tile_2_Farm.png");
+}
+
+.context-buildroom-area-3>.context-buildroom-button{
+    background-image: url("../assets/tiles/Tile_3_Forge.png");
+}
+
+.context-buildroom-area-4>.context-buildroom-button{
+    background-image: url("../assets/tiles/Tile_4_Library.png");
+}
+
+.context-buildroom-area-5>.context-buildroom-button{
+    background-image: url("../assets/tiles/Tile_5_Arcanum.png");
+}
+
+.context-buildroom-area-6>.context-buildroom-button{
+    background-image: url("../assets/tiles/Tile_6_Vault.png");
+}
+
+.context-mapcontrol{
+    width: calc(3 * 32px + 8px);
+}
+.control-mapcontrol-element{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+.control-mapcontrol-element.control-mapcontrol-core{
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    border: 0;
+}
+.control-mapcontrol-element.control-mapcontrol-up{
+    top: -100%;
+    left: 0;
+    border-bottom: 0;
+}
+.control-mapcontrol-element.control-mapcontrol-down{
+    bottom: -100%;
+    left: 0;
+    border-top: 0;
+}
+.control-mapcontrol-element.control-mapcontrol-left{
+    top: 0;
+    left: -100%;
+    border-right: 0;
+}
+.control-mapcontrol-element.control-mapcontrol-right{
+    top: 0;
+    left: 100%;
+    border-left: 0;
+}
+.control-mapcontrol-element.control-mapcontrol-plus{
+    height: 50%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+}
+.control-mapcontrol-element.control-mapcontrol-minus{
+    height: 50%;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+}

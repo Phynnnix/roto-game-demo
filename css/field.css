@@ -1,0 +1,74 @@
+.field-base{
+  position: relative;
+  overflow: visible;
+  border: 1px solid black;
+}
+
+.field-preselected{
+  background-color: aquamarine;
+}
+
+.field-selected{
+  background-color: aqua;
+}
+
+.field-gold-overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field-tile-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field-tile-container.field-pillar{
+  background-color: grey;
+}
+
+.field-creature-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field-owner-overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.field-owner-overlay.owned-by-1{
+  background-image: url("../assets/tiles/field_player_1.png");
+}
+.field-owner-overlay.owned-by-2{
+  background-image: url("../assets/tiles/field_player_2.png");
+}
+.field-owner-overlay.owned-by-3{
+  background-image: url("../assets/tiles/field_player_3.png");
+}
+.field-owner-overlay.owned-by-4{
+  background-image: url("../assets/tiles/field_player_4.png");
+}

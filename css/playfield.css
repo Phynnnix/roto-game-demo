@@ -1,0 +1,18 @@
+.PlayfieldView-view{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+.playfield-field-container{
+  position: relative;
+  display: grid;
+  grid-gap: 1px;
+  height: 3000px;
+  width: 3000px;
+  margin: 0;
+  padding: 0;
+}
